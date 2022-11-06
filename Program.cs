@@ -53,3 +53,38 @@
 // }
 // int[] mas = CreateFillArray(3);
 // SummOfOddNumbersPosition(mas);
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным
+//  элементом массива.
+
+// double[]CreateFillArray(int x) 
+// {
+// double[]Array = new double[x]; 
+// for (int i=0; i<x; i++)
+// {
+//     Array[i] = Convert.ToDouble(new Random().Next(-100, 100)) / 100;
+//     Console.Write($"{Array[i]} ");
+// }
+// return Array; 
+// }
+// void DiffMaxMin(double [] Array)
+// {
+// double min = Int32.MaxValue;
+// double max = Int32.MinValue;
+// double diff = 0;
+// for (int i=0; i<Array.Length; i++)
+// {
+//      if (Array[i] > max)
+//         {
+//             max = Array[i];
+//         }
+//     if (Array[i] < min)
+//         {
+//             min = Array[i];
+//         }
+// }
+// diff = max - min;
+// Console.WriteLine($"Разница между максимальным и минимальным элементом массива: {diff}");
+// }
+// double[] mas = CreateFillArray(5);
+// DiffMaxMin(mas);
